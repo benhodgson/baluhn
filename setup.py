@@ -1,12 +1,10 @@
-# -*- coding: utf-8 -*-
-
 from distutils.core import setup
 
 setup(
     name='baluhn',
     version='0.1',
     license='Public Domain',
-    description='A base–agnostic implementation of the Luhn Algorithm for '
+    description='A base-agnostic implementation of the Luhn Algorithm for '
         'Python. Useful for generating and verifying check digits.',
     package_dir = {'':'src'},
     py_modules=['baluhn'],
