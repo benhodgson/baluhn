@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Baluhn provides a base-agnostic implementation of the [Luhn
+Baluhn provides a base-independent implementation of the [Luhn
 algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm) for Python. It is
 useful for generating and verifying check digits in arbitrary bases.
 
