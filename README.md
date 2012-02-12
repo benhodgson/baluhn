@@ -14,6 +14,10 @@ From Wikipedia:
 > National Provider Identifier numbers in US and Canadian Social Insurance
 > Numbers.
 
+## Installation
+
+Use `pip install baluhn` or `python setup.py install`.
+
 ## Usage
 
 The `baluhn` module provides two functions: `verify` and `generate`.
