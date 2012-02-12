@@ -1,4 +1,4 @@
-# baluhn
+# Baluhn: Base-agnostic Luhn
 
 Baluhn provides a base-independent implementation of the [Luhn
 algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm) for Python. It is
