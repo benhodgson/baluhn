@@ -23,7 +23,7 @@ def generate(string, base=10, encoder=decimal_encoder,
     
     When operating in a base other than decimal, encoder and decoder callables
     should be supplied. The encoder should take a single argument, an integer,
-    and return the character corresponsing to that integer in the operating
+    and return the character corresponding to that integer in the operating
     base. Conversely, the decoder should take a string containing a single
     character and return its integer value in the operating base. Note that
     the mapping between values and characters defined by the encoder and
@@ -59,7 +59,7 @@ def verify(string, base=10, decoder=decimal_decoder):
     
     When operating in a base other than decimal, encoder and decoder callables
     should be supplied. The encoder should take a single argument, an integer,
-    and return the character corresponsing to that integer in the operating
+    and return the character corresponding to that integer in the operating
     base. Conversely, the decoder should take a string containing a single
     character and return its integer value in the operating base. Note that
     the mapping between values and characters defined by the encoder and
