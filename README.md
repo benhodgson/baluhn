@@ -25,16 +25,18 @@ the given base. This character should be appended to the input string to
 produce a valid Luhn string. `verify` tests whether or not a string is a valid
 Luhn string in the given base. By default, Baluhn operates in base 10:
 
-    >>> from baluhn import generate, verify
-    >>> verify('5105105105105100') # MasterCard test number
-    True
-    >>> value = '510510510510510' # note the missing check digit
-    >>> generate(value)
-    '0'
-    >>> verify(value + '0')
-    True
-    >>> verify(value + '7')
-    False
+```python
+>>> from baluhn import generate, verify
+>>> verify('5105105105105100') # MasterCard test number
+True
+>>> value = '510510510510510' # note the missing check digit
+>>> generate(value)
+'0'
+>>> verify(value + '0')
+True
+>>> verify(value + '7')
+False
+```
 
 When operating in a base other than decimal, encoder and decoder callables
 should be supplied. The encoder should take a single argument, an integer, and
@@ -44,17 +46,19 @@ return its integer value in the operating base. Note that the mapping between
 values and characters defined by the encoder and decoder should be one-to-one.
 
 For example, when working in hexadecimal:
-    
-    >>> hex_alphabet = '0123456789abcdef'
-    >>> hex_encoder = lambda i: hex_alphabet[i]
-    >>> hex_decoder = lambda s: hex_alphabet.index(s)
-    >>> value = 'a8b56f'
-    >>> generate(value, base=16, encoder=hex_encoder, decoder=hex_decoder)
-    'b'
-    >>> verify('a8b56fb', base=16, decoder=hex_decoder)
-    True
-    >>> verify('a8b56fc', base=16, decoder=hex_decoder)
-    False
+
+```python
+>>> hex_alphabet = '0123456789abcdef'
+>>> hex_encoder = lambda i: hex_alphabet[i]
+>>> hex_decoder = lambda s: hex_alphabet.index(s)
+>>> value = 'a8b56f'
+>>> generate(value, base=16, encoder=hex_encoder, decoder=hex_decoder)
+'b'
+>>> verify('a8b56fb', base=16, decoder=hex_decoder)
+True
+>>> verify('a8b56fc', base=16, decoder=hex_decoder)
+False
+```
 
 ## Author
 
