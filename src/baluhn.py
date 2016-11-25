@@ -7,11 +7,9 @@ decimal_encoder = lambda i: str(i)
 def luhn_sum_mod_base(string, base=10, decoder=decimal_decoder):
     # Adapted from http://en.wikipedia.org/wiki/Luhn_algorithm
     digits = list(map(decoder, string))
-    return (
-        sum(digits[::-2]) +
-        sum(list(map(lambda d: sum(divmod(2 * d, base)), digits[-2::-2])))
-    ) % base
-
+    return (sum(digits[::-2]) +
+        sum(list(map(lambda d: sum(divmod(2*d, base)), digits[-2::-2])))) % base
+    
 
 def generate(string, base=10, encoder=decimal_encoder,
              decoder=decimal_decoder):
