@@ -21,6 +21,8 @@ setup(
     url='http://github.com/benhodgson/baluhn',
     author='Ben Hodgson',
     author_email='ben@benhodgson.com',
+    maintainer='Four Digits',
+    maintainer_email='info@fourdigits.nl',
     keywords = ['luhn', 'mod10', 'check digit', 'luhn mod N'],
     classifiers = [
         'Programming Language :: Python',
