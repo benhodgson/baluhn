@@ -62,7 +62,7 @@ False
 
 ## Author
 
-Baluhn is written and maintained by [Ben Hodgson](http://benhodgson.com/).
+Baluhn is written by [Ben Hodgson](http://benhodgson.com/) and maintained by [Four Digits](https://fourdigits.nl/).
 
 ## (Un)license
 
