@@ -4,13 +4,13 @@ from setuptools import setup
 
 def long_description():
     this_directory = path.abspath(path.dirname(__file__))
-    with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    with open(path.join(this_directory, 'README.md')) as f:
         return f.read()
 
 
 setup(
     name='baluhn',
-    version='0.1.1',
+    version='0.1.2',
     license='Public Domain',
     description='A base-agnostic implementation of the Luhn Algorithm for '
         'Python. Useful for generating and verifying check digits.',
